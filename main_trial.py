@@ -30,9 +30,9 @@ GOOGLE_CLOUD_KEY_PATH: Optional[str] = None # Initialize to None
 # Retrieve GCP service account key JSON content from Streamlit secrets
 gcp_sa_key_json_content: Optional[str] = None
 try:
-    gcp_sa_key_json_content = st.secrets["gcp_service_account_key"]
+    gcp_sa_key_json_content = st.secrets["GOOGLE_APPLICATION_CREDENTIALS"]
 except KeyError:
-    st.error("Secret 'gcp_service_account_key' not found. Please add the content of your Google Service Account JSON key to Streamlit secrets.")
+    st.error("Secret 'GOOGLE_APPLICATION_CREDENTIALS' not found. Please add the content of your Google Service Account JSON key to Streamlit secrets.")
     st.stop()
 
 # Write the JSON content to a temporary file and set GOOGLE_APPLICATION_CREDENTIALS
