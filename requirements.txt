@@ -6,6 +6,7 @@ langchain-core
 pymongo
 numpy
 pydantic
+av
 google-cloud-translate
 google-cloud-texttospeech
 google-cloud-speech
