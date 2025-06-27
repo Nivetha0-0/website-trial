@@ -8,6 +8,7 @@ pymongo
 numpy
 scipy
 pydantic
+firebase-admin
 av
 google-cloud-translate
 google-cloud-texttospeech
