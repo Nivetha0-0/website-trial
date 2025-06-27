@@ -5,6 +5,7 @@ langchain-openai
 langchain-core
 pymongo
 numpy
+scipy
 pydantic
 av
 google-cloud-translate
